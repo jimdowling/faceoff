@@ -37,6 +37,10 @@ attribute "faceoff/group",
 :description => "group parameter value",
 :type => "string"
 
+attribute "faceoff/node.numWorkers",
+:description => "node.numWorkers parameter value",
+:type => "string"
+
 attribute "faceoff/user",
 :description => "user parameter value",
 :type => "string"

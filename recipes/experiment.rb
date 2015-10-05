@@ -8,10 +8,10 @@ script 'run_experiment' do
   interpreter "bash"
   code <<-EOM
 cd /usr/local/flink
-./bin/flink run -p 1 -j ./examples/flink-java-examples-0.9.1-WordCount.jar hdfs:///User/flink/apache.txt hdfs://10.0.2.15/User/flink/wordcount-result-flink.txt
+./bin/flink run -p #{node.numWorkers} -j ./examples/flink-java-examples-0.9.1-WordCount.jar hdfs:///User/flink/apache.txt hdfs://10.0.2.15/User/flink/wordcount-result-flink.txt
 
 cd /srv/spark
-./bin/spark run -p 1 -j ./examples/spark-java-examples-1.3.1-WordCount.jar hdfs:///User/spark/apache.txt hdfs:///10.0.2.15/User/spark/wordcount-result-spark.txt
+./bin/spark run -p #{node.numWorkers} -j ./examples/spark-java-examples-1.3.1-WordCount.jar hdfs:///User/spark/apache.txt hdfs:///10.0.2.15/User/spark/wordcount-result-spark.txt
 
 /srv/hadoop/bin/hdfs dfs -copyToLocal hdfs:///10.0.2.15/User/flink/wordcount-result-spark.txt /tmp/spark-wc.txt
 /srv/hadoop/bin/hdfs dfs -copyToLocal hdfs:///10.0.2.15/User/spark/wordcount-result-spark.txt /tmp/spark-wc.txt
