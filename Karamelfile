@@ -1,0 +1,8 @@
+dependencies:
+  - recipe: faceoff::install
+  - recipe: faceoff::experiment
+    local:
+      - faceoff::install
+    global:
+
+
