@@ -4,5 +4,7 @@ dependencies:
     local:
       - faceoff::install
     global:
+      - spark::worker
+      - flink::taskmanager
 
 
