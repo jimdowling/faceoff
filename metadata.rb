@@ -7,6 +7,7 @@ version          "0.1"
 
 recipe            "faceoff::install", "Experiment setup for faceoff"
 recipe            "faceoff::experiment",  "configFile=; Experiment name: experiment"
+recipe            "faceoff::blah",  "configFile=; Experiment name: blah"
 
 
 depends "kagent"
