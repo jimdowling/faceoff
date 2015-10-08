@@ -8,3 +8,4 @@ metadata
 cookbook 'hadoop', github: 'hopshadoop/apache-hadoop-chef'
 cookbook 'spark', github: 'hopshadoop/spark-chef'
 cookbook 'flink', github: 'hopshadoop/flink-chef'
+

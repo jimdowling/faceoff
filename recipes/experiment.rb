@@ -23,6 +23,7 @@ wc -l /tmp/spark-wc.txt >> /tmp/faceoff_experiment.out
 echo -n "" >> /tmp/faceoff_experiment.out
 
 echo "bye"
+ 
   EOM
 end
 

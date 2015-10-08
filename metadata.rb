@@ -1,5 +1,5 @@
 name             'faceoff'
-maintainer       "faceoff"
+maintainer       "hdfs"
 maintainer_email "jdowling@kth.se"
 license          "Apache v2.0"
 description      'Installs/Configures/Runs faceoff'
@@ -7,6 +7,7 @@ version          "0.1"
 
 recipe            "faceoff::install", "Experiment setup for faceoff"
 recipe            "faceoff::experiment",  "configFile=; Experiment name: experiment"
+recipe            "faceoff::blahba",  "configFile=; Experiment name: blahba"
 
 
 depends "kagent"
