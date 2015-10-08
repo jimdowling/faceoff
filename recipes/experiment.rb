@@ -21,6 +21,8 @@ wc -l /tmp/flink-wc.txt >> /tmp/faceoff_experiment.out
 echo "nSpark: " >> /tmp/faceoff_experiment.out
 wc -l /tmp/spark-wc.txt >> /tmp/faceoff_experiment.out
 echo -n "" >> /tmp/faceoff_experiment.out
+
+echo "bye"
   EOM
 end
 

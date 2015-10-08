@@ -6,11 +6,5 @@ dependencies:
     global:
       - spark::worker
       - flink::taskmanager
-  - recipe: faceoff::blah
-    local:
-      - faceoff::install
-    global:
-      - spark::worker
-      - flink::taskmanager
 
 
