@@ -17,21 +17,7 @@ depends "kagent"
   supports os
 end
 
-attribute "faceoff/version",
-:description => "Version of faceoff",
-:type => 'string',
-:default => "0.1"
 
-
-attribute "faceoff/url",
-:description => "Url to download binaries for faceoff",
-:type => 'string',
-:default => ""
-
-attribute "faceoff/user",
-:description => "Run faceoff as this user",
-:type => 'string',
-:default => "faceoff"
 
 attribute "faceoff/group",
 :description => "group parameter value",
